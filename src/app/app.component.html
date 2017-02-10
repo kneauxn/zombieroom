@@ -1,98 +1,51 @@
 <html>
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <h1>
-      {{title}}
-    </h1>
-    <h4>Think You're Smart Enough To Get Out?</h4>
-  </div>
-</nav>
-<div>
-  <br><br><br><br><br><br><br><br>
-  <div class="row">
-  <!--sidebar-->
-  <div class="container col-md-3 col-sm-12" style="border: solid 2px">
+<!-- NAVBAR -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">{{title}}</a>
+    </div>
 
-    <p style="font-size: 15pt">
-      <br>
-      Lorem ipsum dolor sit amet, nulla aenean faucibus voluptas dictum integer. Similique vestibulum, metus nulla sed
-      lacus sed luctus accumsan, enim proin venenatis. Sapien quam, vivamus ut volutpat porttitor, nibh ut vitae,
-      malesuada amet magna lectus amet venenatis in. Sollicitudin lacus, sit tortor condimentum porttitor non velit
-      fusce, ut in amet feugiat et pede ac, sed lacinia amet praesent congue faucibus aenean, sollicitudin nibh.
-      Lobortis hymenaeos id suscipit wisi turpis turpis, in gravida, a et nulla mattis purus viverra. Elit vivamus
-      egestas leo, turpis neque, sagittis eget.
-    </p>
-    <br><br>
-  </div>
-
-  <div>
-    <!--main image-->
-    <img class="col-md-9 col-sm-12 img-thumbnail"
-         src="http://nebula.wsimg.com/ac2933e28524e77ce0fef1b88fdb3e5e?AccessKeyId=F2C58445462C9F41A5EE&disposition=0&alloworigin=1">
-  </div>
-  </div>
-
-  <div class="row">
-  <!--section 1-->
-    <div class="container col-md-4 col-sm-12">
-      <h2 class="text-center"><b><u>Show Schedule</u></b></h2><br>
-      <p style="font-size: 18pt">
-        Shows are ongoing and are currently scheduled for Fridays, Saturdays and Sundays. Times vary week to week, so be
-        sure to see which shows work best for you. However PRIVATE shows may be booked and scheduled based upon YOUR
-        needs. Just contact us! If you are redeeming you GROUPON please make sure you go to our buy tickets page to
-        redeem
-        your code and reserve a space at a show, otherwise we won't have a place for you when you show up and then we
-        will
-        be sad!
-      </p></div>
-
-    <!--section 2-->
-    <div class=" container col-md-4 col-sm-12">
-      <h2 class="text-center"><b><u>Buy Tickets</u></b></h2><br>
-      <p style="font-size: 20pt">
-        Tickets are only $28.00 and should be purchased in advance since shows are small and space is limited to 12
-        people. We may be able to accommodate walk ups if space allows, you can call us the day of the show at (602)
-        527-3009 to see if we have room for you! Group discounts are available!
-        Please do NOT book into a private party or show unless you are WITH that group! Please, Please... Please!
-      </p></div>
-
-    <!--section 3-->
-    <div class="container col-md-4 col-sm-12">
-      <h2 class="text-center"><b><u>Location & Directions</u></b></h2><br>
-      <p style="font-size: 20pt">
-        We are located at 5047 East Elliot Road on the South West corner of Elliot and 51st Street. Phoenix, AZ 85044.
-        We
-        are in the shopping center with Eos Gym, Bank of America, Milles Hallmark and Caffe Boa. We are between the
-        salon
-        and quilt shop in the corner.
-      </p>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Purchase Tickets</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Map and Directions</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
     </div>
   </div>
-  <br>
+</nav>
 
-  <div class="col-md-12 container google-maps">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d700.6533597263337!2d-111.97656386914991!3d33.347879844706064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1d91e49a16a8fe6d!2sSakana+Sushi+%26+Grill!5e0!3m2!1sen!2sus!4v1486436304459"
-      width="1120" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+<!-- START THE MAIN DESCRIPTION AND IMAGE "FEATURETTE -->
+<div>
+<hr class="featurette-divider">
+
+<div class="row featurette">
+  <div class="col-md-7">
+    <h2 class="featurette-heading">Trapped In A Room With A Zombie<br><span class="text-muted">Think You're Smart Enough To Get Out?</span></h2>
+    <p class="lead text-center">You have sixty minutes to escape the room. There is one hungry zombie chained to the wall. Every 5minutes a buzzer sounds & the chain is released another foot from the wall!.</p>
   </div>
+  <div class="col-md-5">
+    <img class="featurette-image img-responsive center-block" [src]="'../../assets/img/face.jpg'" alt="Generic placeholder image">
+  </div>
+
 </div>
 
-<!--these styles are just for the google maps embed-->
-<style>
-  .google-maps {
-    position: relative;
-    padding-bottom: 75%;
-  / / This is the aspect ratio height: 0;
-    overflow: hidden;
-  }
+<hr class="featurette-divider">
+</div>
 
-  .google-maps iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100% !important;
-    height: 100% !important;
-  }
-</style>
+<!-- MAIN INFO CAROUSEL -->
+<div>
 
+</div>
 </html>
