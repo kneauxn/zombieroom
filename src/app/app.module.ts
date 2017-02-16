@@ -8,17 +8,25 @@ import { AlertModule } from 'ng2-bootstrap/ng2-bootstrap';
 
 import { AppComponent } from './app.component';
 import { ContactComponent } from './contact/contact.component';
+import { DirectionsComponent } from './directions/directions.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContactComponent
+    ContactComponent,
+    DirectionsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot([]),
+    RouterModule.forRoot([
+      { path: 'contact', component: ContactComponent },
+      { path: 'directions', component: DirectionsComponent },
+      { path: '', component: HomeComponent}
+    ]),
     AlertModule.forRoot()
   ],
   providers: [],
