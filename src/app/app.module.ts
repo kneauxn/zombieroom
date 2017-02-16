@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { RouterModule } from '@angular/router';
 
 import { AlertModule } from 'ng2-bootstrap/ng2-bootstrap';
 
@@ -17,6 +18,7 @@ import { ContactComponent } from './contact/contact.component';
     BrowserModule,
     FormsModule,
     HttpModule,
+    RouterModule.forRoot([]),
     AlertModule.forRoot()
   ],
   providers: [],
