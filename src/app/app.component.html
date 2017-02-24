@@ -1,7 +1,8 @@
-<html>
+<script type="text/javascript" src="js/jquery-1.8.0.js"></script>
 <!-- NAVBAR -->
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
+<div class="navbar-wrapper">
+<nav class="navbar navbar-inverse navbar-static-top">
+  <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
         <span class="sr-only">Toggle navigation</span>
@@ -14,10 +15,10 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="#">Home  <i class="glyphicon glyphicon-home"></i><span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Purchase Tickets  <i class="glyphicon glyphicon-shopping-cart"></i></a></li>
-        <li><a [routerLink]="['/contact']">Contact Us  <i class="glyphicon glyphicon-envelope"></i></a></li>
-        <li><a [routerLink]="['/directions']">Map and Directions  <i class="glyphicon glyphicon-globe"></i></a></li>
+        <li><a [routerLink]="['']"><i class="glyphicon glyphicon-home"></i>   Home<span class="sr-only">(current)</span></a></li>
+        <li><a href="#"><i class="glyphicon glyphicon-shopping-cart"></i>     Purchase Tickets</a></li>
+        <li><a [routerLink]="['/contact']"><i class="glyphicon glyphicon-envelope"> Contact</i></a></li>
+        <li><a [routerLink]="['/directions']"><i class="glyphicon glyphicon-globe"></i>   Map & Directions</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">Privacy Policy</a></li>
@@ -26,5 +27,5 @@
   </div>
 </nav>
 <!--END OF NAVBAR-->
+
 <router-outlet></router-outlet>
-</html>
