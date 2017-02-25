@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 import { FormGroup, FormControl } from '@angular/forms'
 
+import { Comment } from './comment';
+
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -9,10 +11,7 @@ import { FormGroup, FormControl } from '@angular/forms'
 })
 export class ContactComponent implements OnInit {
   contactForm: FormGroup;
-  // I think I need to define the model before using this.
-  // contact: contact = new contact();
-
-  constructor() { }
+  comment: Comment = new Comment();
 
   ngOnInit():void {
     this.contactForm = new FormGroup({
@@ -22,4 +21,7 @@ export class ContactComponent implements OnInit {
       Select: new FormControl()
     });
   }
+
+  constructor() { }
+
 }
