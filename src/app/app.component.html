@@ -4,16 +4,15 @@
 <nav class="navbar navbar-inverse navbar-static-top">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <a class="navbar-brand" style="color: #CB1A03" href="#">{{title}}</a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="navbar">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" style="color: #CB1A03" href="#">{{title}}</a>
     </div>
-
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse" id="navbar">
       <ul class="nav navbar-nav">
         <li><a [routerLink]="['']"><i class="glyphicon glyphicon-home"></i>   Home<span class="sr-only">(current)</span></a></li>
         <li><a href="#"><i class="glyphicon glyphicon-shopping-cart"></i>     Purchase Tickets</a></li>
@@ -23,6 +22,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">Privacy Policy</a></li>
       </ul>
+
     </div>
   </div>
 </nav>

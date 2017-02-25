@@ -14,6 +14,7 @@ export class ContactComponent implements OnInit {
   comment: Comment = new Comment();
 
   ngOnInit():void {
+    // make this neater by using the FormGroup directive's .group() method. Then add validators
     this.contactForm = new FormGroup({
       email: new FormControl(),
       promotions: new FormControl(true),
