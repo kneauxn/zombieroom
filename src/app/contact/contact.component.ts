@@ -9,14 +9,17 @@ import { FormGroup, FormControl } from '@angular/forms'
 })
 export class ContactComponent implements OnInit {
   contactForm: FormGroup;
-  comment: Comment = new Comment();
+  // I think I need to define the model before using this.
+  // contact: contact = new contact();
 
   constructor() { }
 
   ngOnInit():void {
     this.contactForm = new FormGroup({
       email: new FormControl(),
-      promotions: new FormControl(),
+      promotions: new FormControl(true),
+      comment: new FormControl(),
+      Select: new FormControl()
     });
   }
 }
