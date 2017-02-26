@@ -18,9 +18,10 @@ export class ContactComponent implements OnInit {
     this.contactForm = this.formBuilder.group ({
       name: [],
       email: [],
+      // the "send me promotions" box is selected by default if 'true'
       promotions: [true],
       comment: [],
-      Select: [2]
+      select: [2]
     });
   }
 
