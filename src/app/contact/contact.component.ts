@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { FormGroup, FormControl } from '@angular/forms'
+import {FormGroup, FormBuilder, Validators, FormControl} from '@angular/forms'
 
 import { Comment } from './comment';
 
@@ -15,14 +15,15 @@ export class ContactComponent implements OnInit {
 
   ngOnInit():void {
     // make this neater by using the FormGroup directive's .group() method. Then add validators
-    this.contactForm = new FormGroup({
-      email: new FormControl(),
-      promotions: new FormControl(true),
-      comment: new FormControl(),
-      Select: new FormControl()
+    this.contactForm = this.formBuilder.group ({
+      name: [],
+      email: [],
+      promotions: [true],
+      comment: [],
+      Select: [2]
     });
   }
 
-  constructor() { }
+  constructor(private formBuilder: FormBuilder) { }
 
 }
